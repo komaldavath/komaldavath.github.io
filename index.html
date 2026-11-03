@@ -1,110 +1,144 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="QBfOchwjYovgZtWvY-vnbq3-TyNiF4fDVsAt3zpumFQ" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Komal Davath's personal website. Explore projects, coding experiments and social profiles.">
-  <meta name="author" content="Komal Davath">
-  <title>Komal Davath | Official Website</title>
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      background: #111318;
-      color: #f0f1f3;
-      font-family: system-ui, sans-serif;
-    }
-
-    main {
-      max-width: 650px;
-      width: 100%;
-      padding: 36px;
-      border: 1px solid #30333b;
-      border-radius: 22px;
-      background: #191b21;
-    }
-
-    .label {
-      color: #a6abb6;
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
-    h1 {
-      font-size: clamp(42px, 9vw, 68px);
-      letter-spacing: -2px;
-      line-height: 1.05;
-      margin: 24px 0 16px;
-    }
-
-    p {
-      color: #b8bdc8;
-      line-height: 1.8;
-    }
-
-    h2 {
-      margin-top: 34px;
-      font-size: 12px;
-      letter-spacing: 2px;
-      color: #a6abb6;
-      text-transform: uppercase;
-    }
-
-    .links {
-      display: grid;
-      gap: 12px;
-      margin-top: 16px;
-    }
-
-    a {
-      color: #f0f1f3;
-      text-decoration: none;
-      padding: 15px;
-      border: 1px solid #343740;
-      border-radius: 12px;
-    }
-
-    a:hover { border-color: #c0c5d0; }
-
-    footer {
-      margin-top: 34px;
-      color: #777d89;
-      font-size: 12px;
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101113">
+<meta name="description" content="Komal Davath — not just learning. Building. A personal space for curiosity, creativity and exploration.">
+<meta name="google-site-verification" content="QBfOchwjYovgZtWvY-vnbq3-TyNiF4fDVsAt3zpumFQ">
+<title>Komal Davath — KV Graphite</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#101113;--fg:#ededeb;--muted:#9a9b9f;--line:rgba(255,255,255,.15);--silver:#c8cbd0;--mono:"DM Mono",monospace;--sans:"Manrope",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--sans);overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.2'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.mono{font-family:var(--mono)}.shell{width:min(1360px,calc(100% - 80px));margin:auto}
+.cursor-glow{position:fixed;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(190,196,205,.075),transparent 68%);pointer-events:none;transform:translate(-50%,-50%);z-index:0}
+.topbar{height:84px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:20}
+.logo{font-size:13px;font-weight:800;letter-spacing:.18em}.logo em{font-style:normal;color:#777a80;font-weight:400}
+.toplinks{display:flex;gap:30px}.toplinks a{font:10px var(--mono);text-transform:uppercase;letter-spacing:.13em;color:#a8a9ad;transition:color .2s}.toplinks a:hover{color:white}
+.menu-btn{border:1px solid var(--line);background:transparent;border-radius:50%;width:42px;height:42px;display:none}
+.hero{min-height:calc(100svh - 84px);display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:5vw;position:relative;padding:65px 0 90px}
+.hero-left{position:relative;z-index:2}.micro{font:10px var(--mono);letter-spacing:.2em;text-transform:uppercase;color:#a5a7ab;display:flex;gap:12px;align-items:center}.micro:before{content:"";height:1px;width:34px;background:#9da0a5}
+.hero h1{font-size:clamp(64px,9vw,138px);line-height:.83;letter-spacing:-.095em;font-weight:600;margin:35px 0 30px}.hero h1 .outline{color:transparent;-webkit-text-stroke:1px #b9bdc2}.hero h1 .solid{display:block}
+.hero-intro{max-width:450px;color:#b8b9bd;font-size:15px;line-height:1.9;font-weight:300}.hero-cta{display:flex;align-items:center;gap:24px;margin-top:36px}.round-link{display:inline-flex;align-items:center;gap:14px;border:1px solid #74777d;border-radius:50px;padding:13px 18px;font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;transition:.3s}.round-link:hover{background:#e7e8e8;color:#111;border-color:#e7e8e8}.under-link{font:10px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#9b9da1;border-bottom:1px solid var(--line);padding:10px 0}
+.hero-visual{height:min(690px,76vh);min-height:480px;position:relative;overflow:hidden;background:#292a2d}
+.hero-visual:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,11,.08),transparent 42%,rgba(10,10,11,.58)),linear-gradient(90deg,rgba(10,10,11,.2),transparent 55%);pointer-events:none}
+.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center 30%;filter:grayscale(1) contrast(1.08) brightness(.76);transform:scale(1.02);transition:transform 1.5s cubic-bezier(.2,.7,.2,1)}
+.hero-visual:hover img{transform:scale(1.075)}
+.image-index{position:absolute;z-index:2;top:20px;right:22px;font:10px var(--mono);letter-spacing:.18em;color:#d4d5d6}.image-caption{position:absolute;z-index:2;bottom:22px;left:24px;right:24px;display:flex;justify-content:space-between;font:10px var(--mono);letter-spacing:.15em;text-transform:uppercase;color:#dedede}
+.hero-bottom{position:absolute;bottom:25px;left:0;right:0;display:flex;justify-content:space-between;color:#73757a;font:9px var(--mono);letter-spacing:.16em;text-transform:uppercase}
+.hero-bottom span:last-child{display:flex;gap:18px}
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:19px 0;color:#777a80;font:10px var(--mono);letter-spacing:.23em;text-transform:uppercase;white-space:nowrap}
+.marquee-track{display:flex;gap:42px;width:max-content;animation:marquee 32s linear infinite}.marquee b{color:#c3c5c9;font-weight:400}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:140px 0;position:relative}.section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:55px}.section-number{font:10px var(--mono);letter-spacing:.18em;color:#8d9095;text-transform:uppercase}.section-title{font-size:clamp(44px,6.5vw,88px);line-height:.93;letter-spacing:-.075em;font-weight:500;margin:20px 0 0}.section-aside{max-width:270px;color:#92949a;font-size:12px;line-height:1.9}
+.about-layout{display:grid;grid-template-columns:1.1fr .9fr;gap:10vw}.about-statement{font-size:clamp(22px,3vw,39px);line-height:1.42;letter-spacing:-.045em;font-weight:300;color:#d5d6d7}.about-statement strong{font-weight:600;color:#fff}.about-copy{color:#a6a8ad;font-size:13px;line-height:2}.about-copy p{margin:0 0 18px}
+.identity-card{margin-top:45px;max-width:460px;position:relative;min-height:270px;border:1px solid rgba(255,255,255,.2);background:linear-gradient(135deg,#292b2f,#17181b 65%,#33363a);padding:25px;overflow:hidden;transform-style:preserve-3d;transition:transform .15s ease;box-shadow:0 25px 80px rgba(0,0,0,.25)}
+.identity-card:before{content:"";position:absolute;width:260px;height:260px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-95px;top:-105px;box-shadow:0 0 0 24px rgba(255,255,255,.025),0 0 0 50px rgba(255,255,255,.018)}
+.card-top,.card-bottom{display:flex;justify-content:space-between;position:relative;z-index:1;font:9px var(--mono);letter-spacing:.16em;color:#aeb0b5;text-transform:uppercase}.card-name{position:relative;z-index:1;margin-top:70px;font-size:34px;letter-spacing:-.06em}.card-sub{position:relative;z-index:1;color:#aeb0b5;font-size:11px;margin-top:5px}.card-bottom{margin-top:28px}
+.doors-section{background:#151619;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.doors{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;height:450px}
+.door{position:relative;overflow:hidden;background:#222428;border:1px solid rgba(255,255,255,.09);cursor:pointer;transition:flex .65s cubic-bezier(.2,.7,.2,1),background .4s;flex:1;min-width:0}
+.doors{display:flex}.door:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.02),rgba(0,0,0,.78));transition:opacity .4s}
+.door:nth-child(1){background:radial-gradient(circle at 50% 35%,#51545a,#202226 65%)}.door:nth-child(2){background:radial-gradient(circle at 50% 35%,#55504e,#242326 65%)}.door:nth-child(3){background:radial-gradient(circle at 50% 35%,#4b5155,#202326 65%)}.door:nth-child(4){background:radial-gradient(circle at 50% 35%,#514d46,#242321 65%)}.door:nth-child(5){background:radial-gradient(circle at 50% 35%,#4e5058,#202126 65%)}
+.door:hover,.door.active{flex:2.8;background-color:#33363a}.door-visual{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.13);font-size:clamp(70px,11vw,150px);font-weight:300;letter-spacing:-.1em;transition:transform .6s,color .5s}.door:hover .door-visual,.door.active .door-visual{transform:translateY(-25px) scale(1.12);color:rgba(255,255,255,.23)}
+.door-content{position:absolute;z-index:2;left:22px;right:18px;bottom:22px}.door-num{font:9px var(--mono);letter-spacing:.15em;color:#a8aaae}.door h3{font-size:clamp(17px,2vw,24px);font-weight:500;letter-spacing:-.04em;margin:13px 0 0;white-space:nowrap}.door-desc{max-height:0;opacity:0;overflow:hidden;color:#c2c4c8;font-size:11px;line-height:1.8;transition:max-height .5s,opacity .4s;margin:0}.door.active .door-desc,.door:hover .door-desc{max-height:100px;opacity:1;margin-top:12px}.door-hint{font:9px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:#8d9095;margin-top:18px}
+.door-detail{min-height:90px;padding:23px 0 0;display:flex;justify-content:space-between;gap:30px;color:#9da0a5;font-size:12px;line-height:1.8}.door-detail strong{color:#e0e1e2;font-weight:500}
+.story-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:10vw}.story-quote{font-size:clamp(24px,3.5vw,44px);line-height:1.32;letter-spacing:-.05em;font-weight:300}.timeline{border-top:1px solid var(--line)}.timeline-item{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:25px 0;border-bottom:1px solid var(--line)}.timeline-item time{font:10px var(--mono);color:#8c8f94;padding-top:5px}.timeline-item h3{font-size:15px;font-weight:500;margin:0 0 8px}.timeline-item p{font-size:12px;color:#999ba0;line-height:1.8;margin:0}
+.social-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}.social-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:52px}
+.social{min-height:150px;background:#1a1b1f;border:1px solid rgba(255,255,255,.06);padding:23px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .35s,border .35s,background .35s}.social:hover{transform:translateY(-6px);background:#24262a;border-color:rgba(255,255,255,.25)}
+.social-meta{display:flex;justify-content:space-between;font:9px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#92959a}.social strong{font-size:22px;font-weight:500;letter-spacing:-.04em}.social small{font:10px var(--mono);color:#9da0a5}
+.contact-panel{border-top:1px solid var(--line);padding-top:75px;display:flex;justify-content:space-between;align-items:flex-end;gap:40px}.contact-panel h2{font-size:clamp(48px,8vw,108px);line-height:.9;letter-spacing:-.08em;font-weight:500;margin:22px 0 0}.contact-side{max-width:280px;color:#a0a2a7;font-size:12px;line-height:1.9}.contact-side a{display:inline-block;margin-top:18px;border-bottom:1px solid #777;padding-bottom:7px;font:10px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+footer{border-top:1px solid var(--line);padding:28px 0 35px;display:flex;justify-content:space-between;gap:20px;color:#7e8085;font:9px var(--mono);letter-spacing:.13em;text-transform:uppercase}
+.modal{position:fixed;inset:0;background:rgba(5,5,6,.82);backdrop-filter:blur(15px);z-index:50;display:none;align-items:center;justify-content:center;padding:24px}.modal.open{display:flex}.modal-box{width:min(600px,100%);background:#1b1c20;border:1px solid var(--line);padding:38px;position:relative}.modal-close{position:absolute;right:20px;top:17px;background:none;border:0;font-size:25px;cursor:pointer;color:#aaa}.modal-box h3{font-size:34px;letter-spacing:-.06em;margin:18px 0}.modal-box p{color:#aeb0b4;font-size:13px;line-height:1.9}.modal-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}.modal-links a{border:1px solid var(--line);padding:11px 14px;border-radius:30px;font:10px var(--mono);text-transform:uppercase;letter-spacing:.08em}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .85s ease,transform .85s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.shell{width:calc(100% - 48px)}.hero{gap:30px}.toplinks{gap:18px}.about-layout,.story-layout{gap:5vw}.doors{height:390px}.door-content{left:13px;right:10px}.door h3{font-size:18px}.door-desc{font-size:10px}.social-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.shell{width:calc(100% - 36px)}.topbar{height:70px}.menu-btn{display:block}.toplinks{display:none;position:absolute;top:69px;left:-18px;right:-18px;background:#17181b;padding:22px;flex-direction:column;border-bottom:1px solid var(--line)}.toplinks.open{display:flex}.hero{grid-template-columns:1fr;padding:52px 0 75px;gap:30px;min-height:auto}.hero h1{font-size:clamp(62px,17vw,100px)}.hero-visual{height:440px;min-height:0}.hero-bottom{bottom:20px}.hero-bottom span:last-child{display:none}.marquee{padding:14px 0}section{padding:90px 0}.section-top,.social-head{display:block}.section-aside{margin-top:20px}.about-layout,.story-layout{grid-template-columns:1fr;gap:38px}.identity-card{margin-top:30px}.doors{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:8px}.door{height:205px;flex:auto}.door:hover,.door.active{flex:auto}.door:last-child{grid-column:1/-1;height:175px}.door h3{white-space:normal}.door-desc{max-height:100px;opacity:1;margin-top:9px}.door-visual{font-size:90px}.door-detail{display:block}.door-detail span{display:block;margin-top:10px}.timeline-item{grid-template-columns:65px 1fr;gap:14px}.social-grid{grid-template-columns:1fr 1fr;gap:8px;margin-top:35px}.social{min-height:130px;padding:16px}.social strong{font-size:18px}.contact-panel{display:block;padding-top:55px}.contact-side{margin-top:30px}footer{flex-direction:column;gap:12px}.modal-box{padding:30px 22px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
-  <main>
-    <div class="label">Personal website · KV</div>
-    <h1>Komal<br>Davath.</h1>
-
-    <p>
-      Student, developer and builder.
-      Exploring technology, creating projects,
-      and learning by building things myself.
-    </p>
-
-    <h2>Find me online</h2>
-    <div class="links">
-      <a href="https://github.com/komaldavath"
-         target="_blank" rel="noopener noreferrer">
-        GitHub ↗
-      </a>
-      <a href="https://www.instagram.com/komaldavath/"
-         target="_blank" rel="noopener noreferrer">
-        Instagram ↗
-      </a>
+<div class="cursor-glow" id="glow"></div>
+<header class="shell topbar">
+  <a class="logo" href="#home">KV <em>/ GRAPHITE</em></a>
+  <nav class="toplinks" id="toplinks"><a href="#about">About</a><a href="#doors">Explore</a><a href="#story">My story</a><a href="#connect">Connect</a></nav>
+  <button class="menu-btn" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+</header>
+<main>
+  <div class="shell hero" id="home">
+    <div class="hero-left reveal">
+      <div class="micro">Komal Davath · Personal space</div>
+      <h1>NOT JUST<br><span class="outline">LEARNING.</span><span class="solid">BUILDING.</span></h1>
+      <p class="hero-intro">I'm Komal Davath — a student, developer and curious mind exploring technology, design and ideas through building.</p>
+      <div class="hero-cta"><a class="round-link" href="#about">Step inside <span>↘</span></a><a class="under-link" href="#connect">Find me online</a></div>
     </div>
+    <div class="hero-visual reveal"><img src="assets/komal-portrait.jpg" alt="Portrait of Komal Davath"><span class="image-index">KV — 001</span><div class="image-caption"><span>Komal Davath</span><span>Thoughtful · Curious · Creating</span></div></div>
+    <div class="hero-bottom"><span>Independent mind. Ongoing journey.</span><span><span>Scroll to explore</span><span>↓</span></span></div>
+  </div>
+  <div class="marquee"><div class="marquee-track"><span>Curiosity <b>✳</b> Creativity <b>✳</b> Exploration <b>✳</b> Learning <b>✳</b> Perspective <b>✳</b></span><span>Curiosity <b>✳</b> Creativity <b>✳</b> Exploration <b>✳</b> Learning <b>✳</b> Perspective <b>✳</b></span></div></div>
 
-    <footer>© 2026 Komal Davath</footer>
-  </main>
-</body>
-</html>
+  <section id="about"><div class="shell">
+    <div class="section-top reveal"><div><div class="section-number">01 / A little introduction</div><h2 class="section-title">The person<br>behind the initials.</h2></div><p class="section-aside">Not a résumé or a list of achievements. Just a closer look at the person behind KV.</p></div>
+    <div class="about-layout">
+      <div class="about-statement reveal">I'm drawn to the things I don't understand yet. <strong>I like asking questions, exploring possibilities,</strong> and finding my own way through what I learn.</div>
+      <div class="about-copy reveal"><p>I'm someone with a curious mind and a lot of interests. Technology is one part of that, but I'm equally interested in ideas, design, creativity and the way people see the world.</p><p>I don't want to define myself by one skill or one label. I'm still learning, changing my mind, discovering new interests and working out what matters to me.</p><p>This little corner of the internet is a reflection of that process — honest, unfinished and always evolving.</p>
+        <div class="identity-card" id="identityCard"><div class="card-top"><span>Personal identity</span><span>KV / 01</span></div><div class="card-name">Komal Davath.</div><div class="card-sub">Thoughtful mind. Curious by nature.</div><div class="card-bottom"><span>Graphite edition</span><span>Est. 2026</span></div></div>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="doors-section" id="doors"><div class="shell">
+    <div class="section-top reveal"><div><div class="section-number">02 / Open a door</div><h2 class="section-title">Five sides.<br>One evolving story.</h2></div><p class="section-aside">A few things that make me, me. Select a door to explore a little further.</p></div>
+    <div class="doors" id="doorsWall">
+      <article class="door active" tabindex="0" role="button" aria-expanded="true" data-title="Technology" data-copy="I enjoy understanding how things work — from everyday devices to the systems and ideas behind them. The questions are often more interesting than the answers."><div class="door-visual">01</div><div class="door-content"><div class="door-num">01 / SYSTEMS</div><h3>Technology</h3><p class="door-desc">Understanding how things work, and what they make possible.</p><div class="door-hint">Explore ↗</div></div></article>
+      <article class="door" tabindex="0" role="button" aria-expanded="false" data-title="Creativity" data-copy="I like the meeting point between function and feeling: visual design, atmosphere, storytelling and the small details that give an idea its character."><div class="door-visual">02</div><div class="door-content"><div class="door-num">02 / EXPRESSION</div><h3>Creativity</h3><p class="door-desc">Design, aesthetics and imagination.</p><div class="door-hint">Explore ↗</div></div></article>
+      <article class="door" tabindex="0" role="button" aria-expanded="false" data-title="Knowledge" data-copy="Learning is more than collecting information. I enjoy connecting ideas, asking better questions and looking at familiar subjects from a different angle."><div class="door-visual">03</div><div class="door-content"><div class="door-num">03 / IDEAS</div><h3>Knowledge</h3><p class="door-desc">Questions, connections and deeper thinking.</p><div class="door-hint">Explore ↗</div></div></article>
+      <article class="door" tabindex="0" role="button" aria-expanded="false" data-title="Interests" data-copy="There's more to a person than what they study or build. Music, stories, culture, design and the things that spark genuine curiosity all belong here."><div class="door-visual">04</div><div class="door-content"><div class="door-num">04 / BEYOND</div><h3>Interests</h3><p class="door-desc">The things I enjoy outside the usual labels.</p><div class="door-hint">Explore ↗</div></div></article>
+      <article class="door" tabindex="0" role="button" aria-expanded="false" data-title="My journey" data-copy="I'm still becoming. My ambitions will evolve, my interests will grow, and the path won't always be predictable. That's part of what makes it worth exploring."><div class="door-visual">05</div><div class="door-content"><div class="door-num">05 / BECOMING</div><h3>My journey</h3><p class="door-desc">Experiences, ambitions and personal growth.</p><div class="door-hint">Explore ↗</div></div></article>
+    </div>
+    <div class="door-detail" aria-live="polite"><strong id="doorTitle">Technology</strong><span id="doorCopy">I enjoy understanding how things work — from everyday devices to the systems and ideas behind them. The questions are often more interesting than the answers.</span></div>
+  </div></section>
+
+  <section id="story"><div class="shell">
+    <div class="section-top reveal"><div><div class="section-number">03 / The ongoing story</div><h2 class="section-title">Still becoming.<br>Never standing still.</h2></div><p class="section-aside">No manufactured milestones. Just an honest snapshot of a journey that's still unfolding.</p></div>
+    <div class="story-layout"><div class="story-quote reveal">“I don't need to have everything figured out to keep moving forward.”</div><div class="timeline reveal">
+      <div class="timeline-item"><time>01 / NOW</time><div><h3>Learning with intention</h3><p>Building a stronger foundation, exploring new subjects and staying curious about what comes next.</p></div></div>
+      <div class="timeline-item"><time>02 / ALWAYS</time><div><h3>Following curiosity</h3><p>Letting questions lead to new interests, ideas and unexpected directions.</p></div></div>
+      <div class="timeline-item"><time>03 / NEXT</time><div><h3>Making room for what's ahead</h3><p>Keeping an open mind, setting bigger goals and allowing the story to evolve.</p></div></div>
+    </div></div>
+  </div></section>
+
+  <section id="connect"><div class="shell">
+    <div class="social-head reveal"><div><div class="section-number">04 / Across the internet</div><h2 class="section-title">Find your way<br>to my corner.</h2></div><p class="section-aside">Different platforms, different conversations. Choose where you'd like to connect.</p></div>
+    <div class="social-grid">
+      <a class="social reveal" href="https://www.instagram.com/komaldavath/" target="_blank" rel="noopener"><div class="social-meta"><span>01 / Social</span><span>↗</span></div><strong>Instagram</strong><small>@komaldavath</small></a>
+      <a class="social reveal" href="https://github.com/komaldavath" target="_blank" rel="noopener"><div class="social-meta"><span>02 / Code</span><span>↗</span></div><strong>GitHub</strong><small>@komaldavath</small></a>
+      <a class="social reveal" href="https://www.linkedin.com/in/komal-vardhan-davath-069018331/" target="_blank" rel="noopener"><div class="social-meta"><span>03 / Network</span><span>↗</span></div><strong>LinkedIn</strong><small>Komal Vardhan Davath</small></a>
+      <a class="social reveal" href="https://www.snapchat.com/add/komaldavath" target="_blank" rel="noopener"><div class="social-meta"><span>04 / Friends</span><span>↗</span></div><strong>Snapchat</strong><small>komaldavath</small></a>
+      <a class="social reveal" href="https://x.com/komaldavath" target="_blank" rel="noopener"><div class="social-meta"><span>05 / Thoughts</span><span>↗</span></div><strong>X</strong><small>@komaldavath</small></a>
+    </div>
+  </div></section>
+
+  <section><div class="shell contact-panel reveal"><div><div class="section-number">05 / A conversation begins</div><h2>Let's make<br>something of it.</h2></div><div class="contact-side">Have a thought, a question or just want to say hello? Find me on one of the platforms above.<br><a href="#connect">Choose your platform ↗</a></div></div></section>
+</main>
+<footer class="shell"><span>© <span id="year"></span> Komal Davath</span><span>KV Graphite · Personal identity</span><a href="#home">Back to the beginning ↑</a></footer>
+
+<div class="modal" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="modal-close" id="closeModal" aria-label="Close">×</button><div class="section-number">A little more about KV</div><h3 id="modalTitle">A work in progress.</h3><p>This site is a living introduction — a place for interests, ideas and the things I'm still discovering. The best way to know me is to start a conversation.</p><div class="modal-links"><a href="#about" id="modalAbout">About me ↗</a><a href="#connect" id="modalConnect">Connect ↗</a></div></div></div>
+<script>
+const nav=document.getElementById('toplinks'),menu=document.getElementById('menu');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+document.getElementById('year').textContent=new Date().getFullYear();
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');observer.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+const doors=[...document.querySelectorAll('.door')],dt=document.getElementById('doorTitle'),dc=document.getElementById('doorCopy');
+function activateDoor(d){doors.forEach(x=>{const on=x===d;x.classList.toggle('active',on);x.setAttribute('aria-expanded',String(on))});dt.textContent=d.dataset.title;dc.textContent=d.dataset.copy}
+doors.forEach(d=>{d.addEventListener('click',()=>activateDoor(d));d.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activateDoor(d)}})});
+const card=document.getElementById('identityCard');
+if(matchMedia('(pointer:fine)').matches){card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*8}deg)`});card.addEventListener('mouseleave',()=>card.style.transform='')}
+const glow=document.getElementById('glow');
+if(matchMedia('(pointer:fine)').matches){window.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'})}else{glow.style.display='none'}
+</script>
+</body></html>
